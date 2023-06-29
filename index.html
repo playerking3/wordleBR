@@ -4,6 +4,12 @@
 <head>
     <title>Wordle BR</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+        h1 {
+            font-family: 'Gloria Hallelujah', cursive;
+        }
+
         body {
             display: flex;
             flex-direction: column;
@@ -19,6 +25,7 @@
             border-radius: 10px;
             background-color: #fff;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
 
         .word-input {
@@ -34,16 +41,19 @@
         button {
             padding: 10px 20px;
             font-size: 1.2rem;
-            background-color: #4CAF50;
+            background-color: #3f27c6;
             color: #fff;
             border: none;
+            width: 100%;
             border-radius: 5px;
             cursor: pointer;
             margin: 10px 0;
+            display: flex;
+            justify-content: center;
         }
 
         button:hover {
-            background-color: #45a049;
+            background-color: #0716bb;
         }
 
         .guess {
@@ -51,7 +61,6 @@
             grid-template-columns: repeat(5, 1fr);
             gap: 10px;
             margin-bottom: 10px;
-            justify-content: center;
         }
 
         .letter {
@@ -78,6 +87,12 @@
 
         #remaining {
             margin: 10px 0;
+        }
+
+        .guess {
+            font-size: 20px;
+            justify-items: center;
+            scale: 1.1;
         }
     </style>
 </head>
